@@ -57,6 +57,10 @@ module.exports = function(grunt) {
         files: ['css/**/*.css'], // means that any file that ends in .js within the ANY subfile directory of js will do the task below..
         tasks: ['concat'],
       },
+      scss : {
+        files: ['workspace/scss/**/*.scss'],
+        tasks: ['sass:dev'],
+      },
     },
 
 
@@ -67,6 +71,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify'); // Loads uglify plugins
   grunt.loadNpmTasks('grunt-sass');  // loads sass plugins
 
+//  grunt.registerTask('default', ['concat', 'uglify:build', 'sass:dev', 'watch']);
   grunt.registerTask('default', ['concat', 'uglify:build', 'sass:dev', 'watch']);
   //grunt.registerTask('default', ['concat', 'uglify:beautify-code', 'watch']); // beautifies the codes
 
