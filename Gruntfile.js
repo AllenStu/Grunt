@@ -15,7 +15,7 @@ module.exports = function(grunt) {
       }
     },
 
-    beautify-code : {
+    beautifycode : {
       options: {
         beautify: true,
         mangle: false,
@@ -37,6 +37,17 @@ module.exports = function(grunt) {
       },
     },
 
+    sass : {
+      dev: {
+        options: {
+          outputStyle: 'expanded'
+        },
+        files: {
+          'build/css/style2.css' : 'scss/button.scss'
+        }
+      }
+    },
+
     watch: {
       js: {
         files: ['js/**/*.js'], // means that any file that ends in .js within the ANY subfile directory of js will do the task below..
@@ -54,8 +65,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat'); // grunt predefined task, the grunt-contrib-concat will look into the concat defintion/configuration to what to do
   grunt.loadNpmTasks('grunt-contrib-watch'); // with this plugin, it will going to watch the file system changes.
   grunt.loadNpmTasks('grunt-contrib-uglify'); // Loads uglify plugins
+  grunt.loadNpmTasks('grunt-sass');  // loads sass plugins
 
-  grunt.registerTask('default', ['concat', 'uglify:build', 'watch']);
+  grunt.registerTask('default', ['concat', 'uglify:build', 'sass:dev', 'watch']);
   //grunt.registerTask('default', ['concat', 'uglify:beautify-code', 'watch']); // beautifies the codes
 
 }; //end of module exports
