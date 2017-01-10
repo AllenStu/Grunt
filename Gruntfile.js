@@ -3,30 +3,6 @@ module.exports = function(grunt) {
 //  watch it here: https://www.youtube.com/watch?v=TMKj0BxzVgw
 //  to check if the grunt is working, uncomment the codes below
 
-//  grunt.registerTask('speak', function () {
-//      console.log("I'm speaking");
-//  });
-//
-//  grunt.registerTask('yell', function () {
-//      console.log("I'm yelling");
-//  });
-//
-//  grunt.registerTask('default', ['speak', 'yell']);
-
-//  grunt.initConfig({
-//    pkg:grunt.file.readJSON('package.json'),
-//    uglify : {
-//      build: {
-//        src: 'js/*.js',
-//        dest: 'build/uglify/scripts.min.js'
-//      }
-//    },
-//  });
-//
-//  grunt.loadNpmTasks('grunt-contrib-uglify');
-//
-//  grunt.registerTask('default', ['uglify:build']);
-
   /* starts here */
 
   grunt.initConfig({ // grunt config holds all configurations to all of our tasks
