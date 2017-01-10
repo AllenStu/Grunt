@@ -15,6 +15,17 @@ module.exports = function(grunt) {
       }
     },
 
+    beautify-code : {
+      options: {
+        beautify: true,
+        mangle: false,
+        compress: false,
+        preserveComments: 'all'
+      },
+      src: 'build/js/scripts.min.js',
+      dest: 'build/js/scripts.min.js'
+    },
+
     concat: {
       js: {
         src:['js/1.js','js/2.js'],
@@ -42,7 +53,9 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-concat'); // grunt predefined task, the grunt-contrib-concat will look into the concat defintion/configuration to what to do
   grunt.loadNpmTasks('grunt-contrib-watch'); // with this plugin, it will going to watch the file system changes.
-  grunt.loadNpmTasks('grunt-contrib-uglify'); // uglify
+  grunt.loadNpmTasks('grunt-contrib-uglify'); // Loads uglify plugins
+
   grunt.registerTask('default', ['concat', 'uglify:build', 'watch']);
+  //grunt.registerTask('default', ['concat', 'uglify:beautify-code', 'watch']); // beautifies the codes
 
 }; //end of module exports
