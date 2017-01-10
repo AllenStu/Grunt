@@ -13,7 +13,32 @@ module.exports = function(grunt) {
 //
 //  grunt.registerTask('default', ['speak', 'yell']);
 
+//  grunt.initConfig({
+//    pkg:grunt.file.readJSON('package.json'),
+//    uglify : {
+//      build: {
+//        src: 'js/*.js',
+//        dest: 'build/uglify/scripts.min.js'
+//      }
+//    },
+//  });
+//
+//  grunt.loadNpmTasks('grunt-contrib-uglify');
+//
+//  grunt.registerTask('default', ['uglify:build']);
+
+  /* starts here */
+
   grunt.initConfig({ // grunt config holds all configurations to all of our tasks
+    pkg:grunt.file.readJSON('package.json'),
+
+    uglify : {
+      build: {
+        src: 'build/js/scripts.js',
+        dest: 'build/js/scripts.min.js'
+      }
+    },
+
     concat: {
       js: {
         src:['js/1.js','js/2.js'],
@@ -24,6 +49,7 @@ module.exports = function(grunt) {
         dest: 'build/css/style.css'
       },
     },
+
     watch: {
       js: {
         files: ['js/**/*.js'], // means that any file that ends in .js within the ANY subfile directory of js will do the task below..
@@ -34,10 +60,13 @@ module.exports = function(grunt) {
         tasks: ['concat'],
       },
     },
+
+
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat'); // grunt predefined task, the grunt-contrib-concat will look into the concat defintion/configuration to what to do
   grunt.loadNpmTasks('grunt-contrib-watch'); // with this plugin, it will going to watch the file system changes.
-  grunt.registerTask('default', ['concat', 'watch']);
+  grunt.loadNpmTasks('grunt-contrib-uglify'); // uglify
+  grunt.registerTask('default', ['concat', 'uglify:build', 'watch']);
 
 }; //end of module exports

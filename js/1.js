@@ -1,3 +1,6 @@
 /*
-File 1 - ok ok here
+File 1 - ok
 */
+
+var sampleVar = 5;
+var sampleVar2 = 10;
