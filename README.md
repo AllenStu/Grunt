@@ -28,10 +28,10 @@ Requirements
 
 6. Install plugins
 
-    npm install grunt-contrib-concat --save-dev
-    npm install grunt-contrib-uglify --save-dev
-    npm install grunt-contrib-watch --save-dev
-    npm install grunt-sass --save-dev
+    npm install grunt-contrib-concat --save-dev <br/>
+    npm install grunt-contrib-uglify --save-dev <br/>
+    npm install grunt-contrib-watch --save-dev <br/>
+    npm install grunt-sass --save-dev <br/>
 
 7. Create Gruntfile.js
 
