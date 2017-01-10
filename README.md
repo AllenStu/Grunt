@@ -1,43 +1,43 @@
-# Grunt
-Learning Grunt - Skeleton
+# Grunt <br/>
+Learning Grunt - Skeleton <br/>
 
-You can have the full tutorial at 
+You can have the full tutorial at  <br/>
 
-A.
-Youtube Link: https://www.youtube.com/watch?v=TMKj0BxzVgw 
-Title: GRUNT TUTORIAL - Grunt makes your web development better! 
+A. <br/>
+Youtube Link: https://www.youtube.com/watch?v=TMKj0BxzVgw  <br/>
+Title: GRUNT TUTORIAL - Grunt makes your web development better! <br/>
 
-B.
-Youtube Link: https://www.youtube.com/watch?v=JMkMTt2-pm0
-Title: Up and Running with Grunt
+B. <br/>
+Youtube Link: https://www.youtube.com/watch?v=JMkMTt2-pm0 <br/>
+Title: Up and Running with Grunt <br/>
 
 Requirements
-1. Install node.js, visit (http://nodejs.org)
-2. Install npm
-3. Install grunt-cli globally
+1. Install node.js, visit (http://nodejs.org) <br/>
+2. Install npm <br/>
+3. Install grunt-cli globally <br/>
 
-    npm install -g grunt CLI
+    npm install -g grunt CLI <br/>
 
-4. Create package.json file
+4. Create package.json file <br/>
 
-    npm init
+    npm init <br/>
 
-5. Install grunt in the project
+5. Install grunt in the project <br/>
 
-    npm install -S grunt
+    npm install -S grunt <br/>
 
-6. Install plugins
+6. Install plugins <br/>
 
     npm install grunt-contrib-concat --save-dev <br/>
     npm install grunt-contrib-uglify --save-dev <br/>
     npm install grunt-contrib-watch --save-dev <br/>
     npm install grunt-sass --save-dev <br/>
 
-7. Create Gruntfile.js
+7. Create Gruntfile.js <br/>
 
-    touch Gruntfile.js
+    touch Gruntfile.js <br/>
 
-8. At the terminal
+8. At the terminal <br/>
 
-    grunt
+    grunt <br/>
 

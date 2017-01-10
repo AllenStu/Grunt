@@ -1,0 +1,202 @@
+body {
+  background: #f1f0ec image_url("white-bg.jpg") repeat-y 50% 0;
+  color: #555555;
+}
+
+.content_wrapper {
+  width: 910px;
+}
+
+#header {
+  height: 72px;
+  background: #f07c05;
+}
+
+#header h1 {
+  color: white;
+}
+
+#header h1 a {
+  width: 116px;
+  height: 72px;
+  display: block;
+  text-decoration: none;
+}
+
+#header ul {
+  padding: 0 0 0 25px;
+}
+
+#header ul li {
+  padding: 0 20px 0 0;
+  text-transform: uppercase;
+}
+
+#header ul li a {
+  color: #febf0f;
+  text-decoration: none;
+  width: 100px;
+  height: 72px;
+  display: block;
+}
+
+#paging {
+  background: black;
+  height: 33px;
+  padding: 15px 0 0 0;
+}
+
+#paging h6 {
+  color: #908f8b;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+
+#paging h6 a {
+  color: #f07b07;
+  text-decoration: none;
+}
+
+#paging ul li {
+  padding: 3px 4px;
+}
+
+#paging ul li a {
+  color: #4c4c4c;
+  width: 10px;
+  height: 10px;
+  display: block;
+}
+
+#paging ul li.active a {
+  color: #f17d06;
+}
+
+#content {
+  position: relative;
+}
+
+#content #previous {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: right;
+}
+
+#content #next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: left;
+}
+
+#thread {
+  width: 910px;
+  top: 0px;
+  left: 0px;
+}
+
+.js #content {
+  overflow: hidden;
+  width: 100%;
+}
+
+.js #thread {
+  padding: 0;
+  width: 5000px;
+  position: absolute;
+}
+
+.story {
+  width: 810px;
+  padding: 0 50px;
+}
+
+.story h4.date {
+  background: #f1f0ec;
+  padding: 10px 20px;
+}
+
+.story h1 {
+  padding: 40px 0 20px 0;
+  border-bottom: 8px solid black;
+  color: #f07c05;
+}
+
+.story .artifacts .row {
+  border-bottom: 1px dotted #999999;
+  margin-bottom: 20px;
+}
+
+.story .artifacts .artifact {
+  color: #a0a0a0;
+}
+
+.story .artifacts .artifact img {
+  margin-bottom: 0.5em;
+}
+
+.story .artifacts .artifact a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #0a83e0;
+}
+
+.story .information {
+  border-bottom: 1px dotted #999999;
+  margin-left: 40px;
+}
+
+.story .information .quote {
+  color: #f27a00;
+}
+
+.story .information .quote blockquote {
+  color: #f27a00;
+  margin: 0;
+  padding: 12px 18px;
+  background: #f1f0ec;
+}
+
+.story .information .quote cite {
+  display: block;
+  padding: 0.5em 18px 1.5em 18px;
+}
+
+.story .information .disclosure {
+  border-top: 1px dotted #999999;
+}
+
+.story .information .disclosure h5 {
+  padding: 10px 0;
+  margin: 0;
+  color: #ed7c06;
+}
+
+.story .information .disclosure p {
+  color: #a8a8a8;
+}
+
+#footer {
+  background: white;
+  width: 810px;
+  padding: 20px 0;
+}
+
+#footer .inner {
+  border-top: 8px solid black;
+  padding: 30px 0;
+}
+
+#footer p {
+  color: #b3b3b3;
+}
+
+#footer ul li {
+  padding: 0 30px 0 0;
+}
+
+#footer ul li a {
+  text-decoration: none;
+  color: #ef7a06;
+}
