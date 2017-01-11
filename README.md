@@ -16,7 +16,7 @@ Requirements <br/>
 2. Install npm <br/>
 3. Install grunt-cli globally <br/>
 
-    npm install -g grunt CLI <br/>
+    npm install -g grunt CLI
 
 4. Create package.json file <br/>
 
